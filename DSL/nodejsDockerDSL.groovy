@@ -1,9 +1,11 @@
 job('Aplicacion Node.js Docker DSL') {
     description('Aplicación Node JS Docker DSL para el curso de Jenkins')
     scm {
-        git('https://github.com/macloujulian/nodejsapp', 'master') { node ->
+        git('https://github.com/nicolashernanaws/nodejsapp', 'master') { node ->
             node / gitConfigName('nicolashernanaws')
             node / gitConfigEmail('nicolascorteshernan@gmail.com')
+        }
+
         }
     }
     triggers {
